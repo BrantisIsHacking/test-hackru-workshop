@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-const defaultApiUrl = import.meta.env.PROD ? 'https://time-until-api.onrender.com' : 'http://localhost:4000';
-const API_URL = (import.meta.env.VITE_API_URL || defaultApiUrl).replace(/\/$/, '');
+const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:4000').replace(/\/$/, '');
 const DEFAULT_ACCENT = '#e85d3f';
 
 function getCountdownId() {

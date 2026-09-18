@@ -55,7 +55,7 @@ docker compose down
     npm run dev
     ```
 
-  `VITE_API_URL` is optional for local development because the frontend defaults to `http://localhost:4000`.
+  `VITE_API_URL` is optional for local development because the frontend defaults to `http://localhost:4000`. There is no production Render fallback; configure this variable explicitly for every deployed frontend.
 
 ## Deployment teaching path
 
